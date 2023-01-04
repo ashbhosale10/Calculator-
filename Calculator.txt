@@ -1,0 +1,284 @@
+Calculator.....
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_below="@+id/edt1"
+        android:layout_marginTop="94dp"
+        android:text="@string/_1" />
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toStartOf="@+id/button3"
+        android:text="@string/_2" />
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_3" />
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_toStartOf="@+id/button2"
+        android:text="@string/_4" />
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:text="@string/_5" />
+    <Button
+        android:id="@+id/button6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:text="@string/_6" />
+    <Button
+        android:id="@+id/button7"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_toStartOf="@+id/button2"
+        android:text="@string/_7" />
+    <Button
+        android:id="@+id/button8"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:text="@string/_8" />
+    <Button
+        android:id="@+id/button9"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:text="@string/_9" />
+    <Button
+        android:id="@+id/buttonadd"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt1"
+        android:layout_alignRight="@+id/edt1"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/button3"
+        android:text="@string/plus" />
+    <Button
+        android:id="@+id/buttonsub"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonadd"
+        android:layout_alignLeft="@+id/buttonadd"
+        android:layout_alignRight="@+id/buttonadd"
+        android:layout_alignStart="@+id/buttonadd"
+        android:layout_below="@+id/buttonadd"
+        android:text="@string/minus" />
+    <Button
+        android:id="@+id/buttonmul"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonsub"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/buttonsub"
+        android:layout_below="@+id/buttonsub"
+        android:text="@string/muilt" />
+
+    <Button
+        android:id="@+id/button10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        android:layout_toStartOf="@+id/button2"
+        android:text="." />
+    <Button
+        android:id="@+id/button0"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:layout_below="@+id/button8"
+        android:text="@string/_0" />
+    <Button
+        android:id="@+id/buttonC"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:layout_below="@+id/button9"
+        android:text="@string/c" />
+    <Button
+        android:id="@+id/buttondiv"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonmul"
+        android:layout_alignLeft="@+id/buttonmul"
+        android:layout_alignRight="@+id/buttonmul"
+        android:layout_alignStart="@+id/buttonmul"
+        android:layout_below="@+id/buttonmul"
+        android:text="@string/div" />
+    <Button
+        android:id="@+id/buttoneql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttondiv"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignRight="@+id/buttondiv"
+        android:layout_alignStart="@+id/button10"
+        android:layout_below="@+id/button0"
+        android:layout_marginTop="37dp"
+        android:text="@string/equal" />
+</RelativeLayout>
+
+
+package com.example.calculator;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button button0, button1, button2, button3, button4, button5, button6,
+            button7, button8, button9, buttonAdd, buttonSub, buttonDivision,
+            buttonMul, button10, buttonC, buttonEqual;
+    EditText EditText;
+    float mValueOne, mValueTwo;
+    boolean Addition, Subtract, Multiplication, Division;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        button0 = (Button) findViewById(R.id.button0);
+        button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
+        button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
+        button6 = (Button) findViewById(R.id.button6);
+        button7 = (Button) findViewById(R.id.button7);
+        button8 = (Button) findViewById(R.id.button8);
+        button9 = (Button) findViewById(R.id.button9);
+        button10 = (Button) findViewById(R.id.button10);
+        buttonAdd = (Button) findViewById(R.id.buttonadd);
+        buttonSub = (Button) findViewById(R.id.buttonsub);
+        buttonMul = (Button) findViewById(R.id.buttonmul);
+        buttonDivision = (Button) findViewById(R.id.buttondiv);
+        buttonC = (Button) findViewById(R.id.buttonC);
+        buttonEqual = (Button) findViewById(R.id.buttoneql);
+        EditText = (EditText) findViewById(R.id.edt1);
+        button1.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "1"));
+        button2.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "2"));
+        button3.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "3"));
+        button4.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "4"));
+        button5.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "5"));
+        button6.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "6"));
+        button7.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "7"));
+        button8.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "8"));
+        button9.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "9"));
+        button0.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "0"));
+        buttonAdd.setOnClickListener(v -> {
+            if (EditText == null) {
+            } else {
+                mValueOne = Float.parseFloat(EditText.getText() + "");
+                Addition = true;
+                EditText.setText(null);
+            }
+        });
+        buttonSub.setOnClickListener(v -> {
+            mValueOne = Float.parseFloat(EditText.getText() + "");
+            Subtract = true;
+            EditText.setText(null);
+        });
+        buttonMul.setOnClickListener(v -> {
+            mValueOne = Float.parseFloat(EditText.getText() + "");
+            Multiplication = true;
+            EditText.setText(null);
+        });
+        buttonDivision.setOnClickListener(v -> {
+            mValueOne = Float.parseFloat(EditText.getText() + "");
+            Division = true;
+            EditText.setText(null);
+        });
+        buttonEqual.setOnClickListener(v -> {
+            mValueTwo = Float.parseFloat(EditText.getText() + "");
+            if (Addition) {
+                EditText.setText(mValueOne + mValueTwo + "");
+                Addition = false;
+            }
+            if (Subtract) {
+                EditText.setText(mValueOne - mValueTwo + "");
+                Subtract = false;
+            }
+            if (Multiplication) {
+                EditText.setText(mValueOne * mValueTwo + "");
+                Multiplication = false;
+            }
+            if (Division) {
+                EditText.setText(mValueOne / mValueTwo + "");
+                Division = false;
+            }
+        });
+        buttonC.setOnClickListener(v -> EditText.setText(""));
+        button10.setOnClickListener(v -> EditText.setText(EditText.getText() +
+                "."));
+    }
+}
